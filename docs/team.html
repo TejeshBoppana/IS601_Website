@@ -23,26 +23,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
-    <title>About Page</title>
+    <title>Team Page</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link active" href="index.html">HomePage <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">HomePage <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active disabled" href="./about.html">About Us</a>
+                <a class="nav-link" href="./about.html">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./team.html">TeamPage</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Videos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,7 +52,7 @@
                     <a class="dropdown-item" href="containerization.html">Containerization</a>
                     <a class="dropdown-item" href="comparison.html">Comparison of Containerization vs Virtualization</a>
                     <a class="dropdown-item" href="./dockerWebServer.html">Docker Web Server</a>
-                    <a class="dropdown-item" href="./linuxDocker.html">Linux Docker commands</a>
+                    <a class="dropdown-item active disabled" href="./linuxDocker.html">Linux Docker commands</a>
                     <a class="dropdown-item" href="./dockerPycharm.html">Docker and Pycharm</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Waiting for More</a>
@@ -64,14 +66,27 @@
     </div>
 </nav>
 
-
 <div class="jumbotron text-center">
-    <h1 class="display-4">About Us</h1>
-    <p class="lead">
-        After learning about Docker and Virtualization, I used docker to on my own machines and created containers that could run simple python applications.
-        Now in this website I am demonstrating what I understand about virtualization and containerization with the
-        use of Bootstrap and Git.  </p>
-    <div class="text-center">
-        <img src="pics/pic_about_1.jpg" class="rounded"  alt="Picture of Internet and AT Symbol">
+    <h1 class="display-4">Team Introduce</h1>
+    <p>Collaborators: Krishna Eleti and Jiaxing Zhang</p>
+</div>
+
+<div calss="container">
+    <div class="row cardRow">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./pics/pic_team_1.JPG" width="100" class="card-img-top" alt="Krishna Eleti">
+                <div class="card-body">
+                    <h5 class="card-title">Tejesh Boppana</h5>
+                    <p class="card-text">Graduate student at NJIT pursuing Masters in Information Systems
+                    </p>
+                    <a href="https://www.linkedin.com/in/tejesh-boppana-05285317a/" class="btn btn-primary">Linkedin</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+</body>
+</html>
